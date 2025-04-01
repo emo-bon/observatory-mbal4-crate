@@ -54,3 +54,5 @@ ERROR:pipeline.rules:orcid api failure for https://orcid.org/
 ERROR:pipeline.rules:orcid api failure for https://orcid.org/
 ERROR:pipeline.rules:orcid api failure for https://orcid.org/
 ERROR:pipeline.rules:orcid api failure for https://orcid.org/
+ERROR:py_data_rules.rule_engine:rule evaluation failed for tax_id_versus_scientific_name with exception ConnectionError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /Taxonomy/Browser/wwwtax.cgi?id=1874687 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1946f0bc70>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+WARNING:py_data_rules.rule_factory:excess columns in table wo: {'data_owner', 'data_contact_email', 'data_owner_edmoid'}
