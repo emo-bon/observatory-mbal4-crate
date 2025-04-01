@@ -1,0 +1,116 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> . 
+@prefix prov: <http://www.w3.org/ns/prov#> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix ssn: <http://www.w3.org/ns/ssn/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> . 
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix mr: <http://marineregions.org/ns/ontology#> .
+@prefix emobon-sequence: <https://data.emobon.embrc.eu/ns/sequence#> .
+@prefix emobon-core: <https://data.emobon.embrc.eu/ns/core#> .
+@prefix emobon-sampling: <https://data.emobon.embrc.eu/ns/sampling#> .
+@prefix core_vocab: <https://data.emobon.embrc.eu/ns/core_vocab#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#>.
+
+
+@base <http://data.emobon.embrc.eu/observatory-mbal4-crate/water/observation/EMOBON_MBAL4_Wa_14> . 
+<#conduc>
+    a sosa:Observation, schema:Observation , csvw:Cell ;
+    sosa:observedProperty [
+        a sosa:ObservableProperty ; 
+        dct:identifier <http://vocab.nerc.ac.uk/collection/P01/current/CNDCZZ01/> ;
+        rdfs:label 'conduc'^^xsd:string ; 
+    ] ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '39.474'^^xsd:double ;
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/MSCM/> ; 
+    ] ;
+    schema:measurementTechnique 'Valeport MIDAS 606 CTD (with a passive flow induction cell, Platinum Resistance Thermometer and a Temperature Compensated Piezo-Resistive Sensor ) with titanium housing. Full equipment specification is described by Valeport Ltd., 2006. Data were extracted and processed using Valeport DataLogX2 software (version1.0.4.1270). Manufacturer calibrations were applied to the direct measurements and parameters were derived using the in-built functions in the software Datalog X2.'^^xsd:string ;
+    sosa:hasFeatureOfInterest </observatory-mbal4-crate/water/sample/EMOBON_MBAL4_Wa_14> ; 
+.
+<#density>
+    a sosa:Observation, schema:Observation , csvw:Cell ;
+    sosa:observedProperty [
+        a sosa:ObservableProperty ; 
+        dct:identifier <http://vocab.nerc.ac.uk/collection/P02/current/SIGT/> ;
+        rdfs:label 'density'^^xsd:string ; 
+    ] ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '1026.498'^^xsd:double ;
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGMC/> ; 
+    ] ;
+    schema:measurementTechnique 'Valeport MIDAS 606 CTD (with a passive flow induction cell, Platinum Resistance Thermometer and a Temperature Compensated Piezo-Resistive Sensor ) with titanium housing. Full equipment specification is described by Valeport Ltd., 2006. Data were extracted and processed using Valeport DataLogX2 software (version1.0.4.1270). Manufacturer calibrations were applied to the direct measurements and parameters were derived using the in-built functions in the software Datalog X2.'^^xsd:string ;
+    sosa:hasFeatureOfInterest </observatory-mbal4-crate/water/sample/EMOBON_MBAL4_Wa_14> ; 
+.
+<#sea_subsurf_salinity>
+    a sosa:Observation, schema:Observation , csvw:Cell ;
+    sosa:observedProperty [
+        a sosa:ObservableProperty ; 
+        dct:identifier <https://data.emobon.embrc.eu/ns/observableproperty_vocab#Sal_Sampledepth> ;
+        rdfs:label 'sea_subsurf_salinity'^^xsd:string ; 
+    ] ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '34.791'^^xsd:double ;
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/> ; 
+    ] ;
+    schema:measurementTechnique 'Valeport MIDAS 606 CTD (with a passive flow induction cell, Platinum Resistance Thermometer and a Temperature Compensated Piezo-Resistive Sensor ) with titanium housing. Full equipment specification is described by Valeport Ltd., 2006. Data were extracted and processed using Valeport DataLogX2 software (version1.0.4.1270). Manufacturer calibrations were applied to the direct measurements and parameters were derived using the in-built functions in the software Datalog X2.'^^xsd:string ;
+    sosa:hasFeatureOfInterest </observatory-mbal4-crate/water/sample/EMOBON_MBAL4_Wa_14> ; 
+.
+<#sea_subsurf_temp>
+    a sosa:Observation, schema:Observation , csvw:Cell ;
+    sosa:observedProperty [
+        a sosa:ObservableProperty ; 
+        dct:identifier <https://data.emobon.embrc.eu/ns/observableproperty_vocab#Temp_Sampledepth> ;
+        rdfs:label 'sea_subsurf_temp'^^xsd:string ; 
+    ] ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '11.674'^^xsd:double ;
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ; 
+    ] ;
+    schema:measurementTechnique 'Valeport MIDAS 606 CTD (with a passive flow induction cell, Platinum Resistance Thermometer and a Temperature Compensated Piezo-Resistive Sensor ) with titanium housing. Full equipment specification is described by Valeport Ltd., 2006. Data were extracted and processed using Valeport DataLogX2 software (version1.0.4.1270). Manufacturer calibrations were applied to the direct measurements and parameters were derived using the in-built functions in the software Datalog X2.'^^xsd:string ;
+    sosa:hasFeatureOfInterest </observatory-mbal4-crate/water/sample/EMOBON_MBAL4_Wa_14> ; 
+.
+<#sea_surf_temp>
+    a sosa:Observation, schema:Observation , csvw:Cell ;
+    sosa:observedProperty [
+        a sosa:ObservableProperty ; 
+        dct:identifier <https://data.emobon.embrc.eu/ns/observableproperty_vocab#Temp_Surface> ;
+        rdfs:label 'sea_surf_temp'^^xsd:string ; 
+    ] ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '11.1'^^xsd:double ;
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ; 
+    ] ;
+    schema:measurementTechnique 'Thermometer'^^xsd:string ;
+    sosa:hasFeatureOfInterest </observatory-mbal4-crate/water/sample/EMOBON_MBAL4_Wa_14> ; 
+.
+<#turbidity>
+    a sosa:Observation, schema:Observation , csvw:Cell ;
+    sosa:observedProperty [
+        a sosa:ObservableProperty ; 
+        dct:identifier <http://vocab.nerc.ac.uk/collection/P01/current/TURBXXXX/> ;
+        rdfs:label 'turbidity'^^xsd:string ; 
+    ] ;
+
+    sosa:hasResult [
+        a sosa:Result , qudt:QuantityValue ;
+        qudt:numericValue '10.0'^^xsd:double ;
+        qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/USTU/> ; 
+    ] ;
+    schema:measurementTechnique 'Secchi disc'^^xsd:string ;
+    sosa:hasFeatureOfInterest </observatory-mbal4-crate/water/sample/EMOBON_MBAL4_Wa_14> ; 
+.
