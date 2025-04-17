@@ -40,6 +40,9 @@
                     "@id": "logsheets/"
                 },
                 {
+                    "@id": "all-triples.ttl"
+                },
+                {
                     "@id": "logsheets/sediment_measured.csv"
                 },
                 {
@@ -124,6 +127,11 @@
             "@id": "https://data.emobon.embrc.eu/observatory-profile/latest",
             "@type": "CreativeWork",
             "name": "<name>"
+        },
+        {
+            "@id": "all-triples.ttl", 
+            "@type": "File",
+            "encodingFormat": "text/turtle"
         },
         {
             "@id": "README.md",
